@@ -1,0 +1,6 @@
+# authenticate(Basic)
+AuthUserFile ここにhtpasswdファイルの絶対パスを指定
+AuthGroupFile /dev/null
+AuthName "overthere"
+AuthType Basic
+require valid-user
