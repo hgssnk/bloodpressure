@@ -11,9 +11,12 @@
 echo $_POST['hoge'];
 echo $_POST['moge'];
 
+$date = date("Y/m/d H:i:s");
 $hoge = $_POST['hoge'];
-$csv = fopen('hoge.csv', 'w');
-fputs($csv, $hoge);
+$input = $date.",".$hoge."\n";
+$csv = fopen('hoge.csv', 'a');
+
+fputs($csv, $input);
 fclose($csv);
 
 ?>
