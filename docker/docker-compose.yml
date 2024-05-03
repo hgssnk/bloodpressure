@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile_apache
+    container_name: web
+    volumes:
+      - ../apache:/var/www/html
+    ports:
+      - "8080:80"
