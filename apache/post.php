@@ -1,5 +1,5 @@
 <?php
-header("Location: index.php");
+header("Location: list.php");
 
 $date = date("Y/m/d H:i:s");
 $hoge = $_POST['hoge'];
